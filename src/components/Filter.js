@@ -1,13 +1,13 @@
 import React from "react";
 
-function Filter({ onCategoryChange, onSearchChange, searchValue }) {
+function Filter({ onCategoryChange, onSearchChange, search }) {
   return (
     <div className="Filter">
       <input
         type="text"
         name="search"
         placeholder="Search..."
-        value={searchValue}
+        value={search}
         onChange={(e) => onSearchChange(e.target.value)}
       />
       <select name="filter" onChange={onCategoryChange}>
